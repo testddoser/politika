@@ -1,0 +1,139 @@
+body {
+  background: #1D1B26;
+  font-family: Arial, sans-serif;
+}
+.rounded-image {
+            border-radius: 50px;
+        }
+.sliding-button {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+    .container {
+      width: 80%;
+      height: 80vh; /* Занимает 80% высоты экрана */
+      margin: 0 auto;
+      display: flex;
+      /*justify-content: center;
+      align-items: center; */
+    }
+
+.sliding-button1 {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: red;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+.sliding-button1:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.sliding-button1:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+
+
+.button-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.button {
+  background-color: #9b387b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+
+
+    h1 {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 90%;
+        height: 70vh; /* Занимает 70% высоты экрана */
+        white-space: normal; /* Позволяет переносить строки внутри контейнера */
+
+      }
+    }
+
+header {
+      background-color: #8b86af;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+.fade-in {
+  opacity: 0; /* Скрыть элемент */
+  transition: opacity 0.5s ease-in-out; /* Добавить плавный переход при изменении прозрачности */
+}
